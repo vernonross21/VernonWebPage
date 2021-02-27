@@ -1,0 +1,157 @@
+/* Defaults */
+nav, header, footer
+{
+    display: block;
+}
+
+body
+{
+    margin: 0;
+    line-height: 1;
+
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-color: black;
+    background-image: url("dragon.jpg");
+}
+
+.vernonimg
+{
+    border-radius: 50%;
+}
+.Intro
+{
+    color:white;
+}
+.Heading
+{
+    color:white;
+    text-align: center;
+}
+
+.contactInfo
+{
+    position: absolute;
+    bottom: 1px;
+}
+/* Nav Bar */
+
+nav
+{
+    width: 100%;
+    margin: 0;
+}
+nav ul
+{
+    background-color: gray;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+
+ul.topnav li
+{
+    list-style: none;
+    float:left;
+}
+
+ul.topnav li.topnav-right
+{
+    float: right;
+}
+
+ul.topnav li a
+{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color:white;
+}
+
+ul.topnav li a:hover
+{
+    background-color: blue;
+    color: white;
+}
+
+ul.topnav li.dropDownIcon
+{
+    display: none;
+}
+
+.container
+{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+
+.container
+{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Custom styles
+
+#section-1-gradient
+{
+    height: 200px;
+    background-color: #076dff;
+    background-image: linear-gradient(to bottom right, #076dff, black);
+}
+*/
+
+.name
+{
+
+    text-align: center;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 680px)
+{
+    ul.topnav li:not(:nth-child(1))
+    {
+        display: none;
+    }
+
+    ul.topnav li.dropDownIcon
+    {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropDownIcon
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive
+    {
+        position: relative;
+    }
+
+    ul.topnav.responsive li
+    {
+        display: inline;
+        float:none;
+    }
+
+    ul.topnav.responsive li a
+    {
+        display: block;
+        text-align: left;
+    }
+}
+
